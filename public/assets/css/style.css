@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+/* Scroll Bar */
+/* width */
+::-webkit-scrollbar {
+    width: 20px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #d23359; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #a02e49; 
+  }
+
+/* Slider Nav */
+#fp-nav ul li a span, 
+.fp-slidesNav ul li a span {
+	background: #c83460;
+	width: 8px;
+	height: 8px;
+	margin: -4px 0 0 -4px;
+}
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li a.active span, 
+#fp-nav ul li:hover a.active span, 
+.fp-slidesNav ul li:hover a.active span {
+	width: 16px;
+	height: 16px;
+	margin: -8px 0 0 -8px;
+	background: transparent;
+	box-sizing: border-box;
+	border: 2px solid #c83460;
+}
+
+
+.title-sect{
+    font-weight: 500 !important;
+    margin-bottom: 0 !important;
+}
+
+.subtitle-sect{
+    font-weight: 400 !important;
+    font-weight: 0.8rem;
+    opacity: 0.5;
+}
+
+.outer-box{
+    padding: 2.0rem !important;
+    background-color: #282828;
+    color: white;
+}
+
+/* ----------------
+------ Navbar -----
+------------------*/
+
+nav{
+    background-color: #282828 !important;
+}
+
+.nav-wrapper{
+    display: flex !important;
+    justify-content: space-between;
+}
+.nav-bar {
+    display: flex !important;
+    padding-left: 10rem !important;
+    justify-content: center;
+}
+
+.nav-bar .nav-elements,
+.nav-wrapper .nav-elements{
+    display: flex;
+    gap: 1rem !important;
+}
+
+.nav-bar .nav-elements li a,
+.nav-wrapper .nav-elements li a{
+    color: white !important;
+    border-bottom: solid 3px #282828 ;
+    font-size: 1.5rem;
+}
+
+.nav-bar .nav-elements li a:hover,
+.nav-bar .nav-elements li a.active,
+.nav-wrapper .nav-elements li a:hover,
+.nav-wrapper .nav-elements li a.active{
+    color: #d23359 !important;
+    border-bottom: solid 3px #d23359 ;
+}
+/* ---------------
+------ Home ------
+------------------*/
+
+.outer-box .date-box{
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    height: 150px;
+    width: 150px;
+    padding-top: 40px;
+    background-color: #44253a;
+}
+
+.outer-box .date-box .title-date, .outer-box .date-box .subtitle-date{
+    margin: auto;
+    text-align: center;
+}
+
+.outer-box .date-box .title-date{
+    font-size: 2.8rem;
+}
+
+.outer-box .date-box .subtitle-date{
+    font-size: 1.2rem;
+    opacity: 0.5;
+}
+
+.outer-box .hour-box .title-day{
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.outer-box .hour-box .break{
+    color: #d23359 !important ;
+}
+
+.outer-box .hour-box .title-day .time{
+    padding-left: 0.5rem;
+    font-weight: 400 !important;
+}
+
+.outer-box .promotion-box {
+    gap: 1rem;
+    display: flex;
+    padding: 0 3rem 0 0;
+}
+
+.outer-box .promotion-box .promotion-row {
+    background-color: yellow;
+    flex-direction: row;
+    display: flex;
+    width: 45%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.outer-box .promotion-box .promotion-column{
+    flex-direction: column;
+    display: flex;
+    gap: 1rem;
+    width: 55%;
+}
+
+.outer-box .promotion-box .promotion-column .promo-2{
+    background-color: red;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+
+}
+
+.outer-box .promotion-box .promotion-column .promo-3{
+    background-color: blue;
+    height: 150px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.outer-box .promotion-box .promotion-row .promo-caption,
+.outer-box .promotion-box .promotion-column .promo-caption{
+    position: absolute;
+    bottom: 0;
+    left: 1rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 200px;
+    word-wrap: break-word;
+    opacity: 0.8;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.518);
+}
+
+
+/* ---------------------
+------ Membership ------
+-----------------------*/
+.outer-member{
+    padding: 2.0rem !important;
+    background-color: #282828;
+    color: white;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+.member-card {
+    margin: auto;
+    width: 500px;
+    height: 270px;
+    border-radius: 20px;
+    background-color: #545454;
+}
+
+.member-card .card-header .title-card{
+    text-align: end;
+    padding: 20px;
+    padding-bottom: 5px;
+    font-size: 1.5rem;
+}
+
+.member-card .card-body .card-details{
+    padding: 0.5rem !important;
+    background: linear-gradient(100deg, #c63029 66.42%, rgba(0, 0, 0, 0) 33.33%, rgba(0, 0, 0, 0) calc(66.42% + 5px), #fff calc(33.33% + 4px));
+    margin:0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700 !important;
+}
+
+.member-card .card-body .card-details .memberid{
+    padding-left: 1.5rem;
+    color: #282828;
+}
+
+.member-card .card-body .expiry-details{
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.member-card .card-body .expiry-details .barcode-expiry {
+    display: flex;
+    justify-content: center;
+}
+
+.member-card .card-body .expiry-details .barcode-expiry img{
+    width: 40%;
+    filter: invert();
+}
+
+.member-card .card-footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.member-card .card-footer .footnote{
+    text-transform: uppercase;
+    padding-left: 1rem;
+    font-size: 0.8rem;
+}
+
+.member-card .card-footer img{
+    height: 30px;
+    padding-right: 10px;
+}
+
+.renew-box {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.renew-box  .renew-btn {
+    background-color: #d23359 !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
+}
+
+.renew-box  .renew-btn:hover {
+    background-color: white !important;
+    color: #d23359;
+}
+
+.title-year{
+    margin-top: 1rem;
+    padding: 0 2rem 0 2rem !important;
+    color: #d23359;
+}
+
+.list-subscription-wrapper{
+    margin-top: 0.5rem;
+    padding: 0 2rem 0 2rem !important;
+
+}
+.list-subscription-wrapper .list-subscription {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    background-color: #1b1b1b;
+    color: white;
+    border: none;
+    padding: 1rem;
+}
+
+.list-subscription-wrapper .subcsription{
+    display: flex;
+    justify-content: start;
+}
+
+.list-subscription-wrapper .subscription-date{
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.title-form {
+    text-align: center;
+}
+
+.image-box img{
+    height: 350px;
+}
+
+.renew-form {
+    padding: 3rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+}
+
+.renew-form .submit-btn{
+    display: flex;
+    justify-content: center;
+}
+
+.renew-form .submit-btn button{
+    padding: 2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+    border-radius: 20px;
+    background-color: #d23359 !important;
+    font-weight: 700;
+    border: none;
+
+}
