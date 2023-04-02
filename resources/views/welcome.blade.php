@@ -41,10 +41,10 @@
                 </div>
             </div>
         </section>
-        {{-- <section class="vertical-scrolling">
+        <section class="vertical-scrolling">
             <h2>#2</h2>
             <h3>This is the second section</h3>
-        </section> --}}
+        </section>
         {{-- <section class="vertical-scrolling">
             <h2>#3</h2>
             <h3>This is the third section</h3>

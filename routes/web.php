@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -21,4 +22,16 @@ Route::get('/home', function () {
 });
 
 Route::resources([
-    'membership'=>'App\Http\Controllers\MembershipController']);
+    'membership'=>'App\Http\Controllers\MembershipController',
+    'booking'=>'App\Http\Controllers\BookingController',
+    'profile'=>'App\Http\Controllers\ProfileController',
+]);
+
+// Auth Routes
+Route::get('home', [AuthController::class, 'home']); 
+Route::get('login', [AuthController::class, 'index'])->name('login');
+Route::post('custom-login', [AuthController::class, 'customLogin'])->name('login.custom'); 
+Route::get('registration', [AuthController::class, 'registration'])->name('register-user');
+Route::post('custom-registration', [AuthController::class, 'customRegistration'])->name('register.custom'); 
+Route::get('signout', [AuthController::class, 'signOut'])->name('signout');
+

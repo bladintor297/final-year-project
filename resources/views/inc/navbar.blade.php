@@ -3,6 +3,7 @@
     <a class="navbar-brand" href="/home">
       <img src='{{ URL::asset('assets/img/qidgym-logo.png'); }}' alt="Bootstrap" height="50">
     </a>
+    @if (Auth::check())
     <div class="collapse navbar-collapse nav-bar" id="navbarSupportedContent">
       <ul class="navbar-nav nav-elements">
         <li class="nav-item">
@@ -12,19 +13,32 @@
           <a class="nav-link" href="/membership"><i class="bi bi-person-vcard-fill"></i> Membership</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="bi bi-calendar2-check"></i> Booking</a>
+          <a class="nav-link" href="/booking"><i class="bi bi-calendar2-check"></i> Booking</a>
         </li>
       </ul>
     </div>
+        
     <ul class="navbar-nav nav-elements">
       <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="#"><i class="bi bi-person-fill"></i> Profile</a>
+        <a class="nav-link" aria-current="page" href="/profile"><i class="bi bi-person-fill"></i> Profile</a>
       </li>
       <div class="vr text-white"></div>
       <li class="nav-item">
         <a class="nav-link" aria-current="page" href="#"><i class="bi bi-box-arrow-right"></i></a>
       </li>
     </ul>
+
+    @else
+    <ul class="navbar-nav nav-elements">
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/registration">Register</a>
+      </li>
+      <div class="vr text-white"></div>
+      <li class="nav-item">
+        <a class="nav-link" aria-current="page" href="/login">Login</a>
+      </li>
+    </ul>
+    @endif
     
   </div>
 </nav>

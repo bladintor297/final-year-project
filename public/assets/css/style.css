@@ -108,6 +108,8 @@ nav{
     color: #d23359 !important;
     border-bottom: solid 3px #d23359 ;
 }
+
+
 /* ---------------
 ------ Home ------
 ------------------*/
@@ -210,6 +212,10 @@ nav{
     color: white;
     height: 500px;
     overflow-y: scroll;
+}
+
+.outer-member .image-box img{
+    height: 350px;
 }
 
 .member-card {
@@ -333,13 +339,11 @@ nav{
     text-align: center;
 }
 
-.image-box img{
-    height: 350px;
-}
+
 
 .renew-form {
     padding: 3rem;
-    padding-top: 0.5rem;
+    padding-top: 2rem;
     padding-bottom: 0;
 }
 
@@ -357,4 +361,215 @@ nav{
     font-weight: 700;
     border: none;
 
+}
+
+/* -----------------
+------ Booking -----
+------------------*/
+
+
+.outer-booking{
+    padding: 2rem 5.0rem 0 5.0rem !important;
+    background-color: #282828;
+    color: white;
+}
+
+.outer-booking .space-box{
+    width: 50%;
+}
+
+.outer-booking .space-box .header{
+    color: red;
+    z-index: 1;
+    padding: 2rem;
+}
+
+.outer-booking .space-box .header p{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.outer-booking .space-box img{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.booking-list{
+    border: none !important;
+}
+
+.booking-list .my-booking {
+    background: #d2335822  !important;
+    border: solid 2px #d23358 !important;
+    color: white;
+    
+}
+
+.booking-list .my-booking .booking-detail{
+    margin-left: 0;
+    margin-right: 0;
+    border-right: solid 1px #d23359;
+    
+}
+
+.booking-list .my-booking .heading{
+    font-size: 1.3rem;
+    text-align: center;
+
+}
+.booking-list .my-booking .text{
+    padding-top: 0.5rem;
+}
+
+.booking-list .my-booking .booking-detail .date-box{
+    margin-top: 1.3rem;
+}
+
+.booking-list .my-booking .booking-detail .date-box .date{
+    text-align: center;
+}
+
+.booking-list .my-booking .booking-detail .date-box .book-date{
+    border-right: solid 2px #d2335843;
+}
+
+.booking-list .my-booking .booking-detail .date-box .date p,
+.booking-list .my-booking .booking-detail .date-box .date h3{
+    margin: 0;
+    padding: 0;
+}
+
+.booking-list .my-booking .booking-detail .date-box .date h3{
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.booking-list .my-booking .booking-detail .date-box .date .month{
+    padding-top: 0.3rem;
+    font-size: 0.7rem;
+    opacity: 0.5;
+}
+
+.booking-list .my-booking .status {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-self:center ;
+}
+
+.booking-list .my-booking .status .badge{
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: rgb(235, 184, 0);
+    color: #1b1b1b;
+    margin: 0.5rem 1rem 0 1rem;
+}
+
+
+.booking-list .my-booking .status .view-more{
+    display: flex;
+    justify-content: end;
+}
+
+.booking-list .my-booking .status .view-more a{
+    text-decoration: none;
+    background-color: #d23359;
+    color: white;
+    border-radius: 0.5rem;
+    padding: 0 1rem 0 1rem;
+    width: fit-content;
+    margin-top: 2rem;
+    text-align: end;
+}
+
+
+
+.booking-list .my-booking img{
+    width: 100% !important;
+    height: 150px;
+    object-fit: cover;
+    border: solid 3px #d23358 ;
+}
+
+
+/* ---------------
+------ Profile ------
+------------------*/
+
+.outer-profile{
+    padding: 0 !important;
+    background-color: #282828;
+    color: white;
+    height: 500px;
+    overflow-y: scroll;
+    display: flex;
+}
+
+.outer-profile .image-box{
+    width: 40%;
+    height: 100%;
+    background-color: #a02e49;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.outer-profile .image-box .avatar-box{
+    border: solid 5px #1e1e1e;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.outer-profile .image-box .avatar-box img{
+    width: 70%;
+    border-radius: 50%;
+    border: solid 5px #1e1e1e;
+    object-fit: cover;
+}
+.outer-profile .image-box .avatar-box .header,
+.outer-profile .image-box .avatar-box .footer{
+    background-color: #ffffff;
+    color: #1e1e1e;
+    font-weight: 700;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+}
+
+.outer-profile .image-box .avatar-box .header{
+    border-bottom: solid 5px #1e1e1e;
+}
+
+.outer-profile .image-box .avatar-box .footer{
+    border-top: solid 5px #1e1e1e;
+}
+
+.outer-profile .detail-box{
+    height: 100%;
+    width: 60%;
+}
+
+.outer-profile .detail-box .profile-form{
+    padding: 4rem 5rem 1rem 5rem;
+    margin: 0;
+}
+
+.outer-profile .detail-box .profile-form  .update-btn {
+    background-color: #d23359 !important;
+    padding-left: 2.5rem !important;
+    padding-right: 2.5rem !important;
+    font-weight: 700;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 20px;
 }
